@@ -1,0 +1,15 @@
+.github
+dist
+docs/assets
+docs/dist
+docs/**/*.md
+docs/*
+loader
+node_modules
+src/components/**/readme.md
+src/components.d.ts
+www
+package-lock.json
+.history/
+.drone.yml
+changelog.md
