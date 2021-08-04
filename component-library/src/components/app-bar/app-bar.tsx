@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'app-bar',
@@ -6,13 +6,17 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true
 })
 export class AppBar {
-  // test
+  @Prop() siteName: string;
 
   render() {
     return (
       <Host>
-        <header></header>
-        <slot></slot>
+        <header>
+          <h1>{this.siteName}</h1>
+          <menu>
+            <slot></slot>
+          </menu>
+        </header>
       </Host>
     );
   }

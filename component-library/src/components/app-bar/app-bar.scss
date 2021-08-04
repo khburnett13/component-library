@@ -1,3 +1,26 @@
 :host {
   display: block;
 }
+
+header {
+  align-items: center;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  display: flex;
+  flex-basis: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 1em;
+  line-height: 2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+menu {
+  padding: 0;
+  margin-left: auto;
+}
